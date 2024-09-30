@@ -72,6 +72,59 @@ function App() {
               placeholder="HTML, CSS, JS, C++, C, React ,Firebase, DSA"
             />
           </div>
+
+      
+          <div className="left-container1 bg-white h-[53%] p-[20px] rounded-lg leading-loose">
+          <h1 className="text-3xl font-bold underline decoration-purple-400">
+              What are you doing now?
+            </h1>
+            <div className="flex mx-4 space-x-5">
+            <div>
+                <div>
+                  <h3 className="mt-4 block text-gray-700 text-xl font-bold">🚧I’m currently working on...</h3>
+                  <input type="text"
+                  className="w-500px p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                  placeholder="Your answer here" />
+                </div>
+
+                <div>
+                  <h3 className="mt-4 block text-gray-700 text-xl font-bold">📑I’m currently learning...</h3>
+                  <input type="text"
+                  className="w-50% p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                  placeholder="Your answer here" />
+                </div>
+
+                <div>
+                  <h3 className="mt-4 block text-gray-700 text-xl font-bold">🏅My Favourite Hobby...</h3>
+                  <input type="text"
+                  className="p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                  placeholder="Your answer here" />
+                </div>
+            </div>
+          <div>
+          <div>
+                  <h3 className="mt-4 block text-gray-700 text-xl font-bold">🗡️ Look At My this Project...</h3>
+                  <input type="text"
+                  className="w-50% p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                  placeholder="Your answer here" />
+                </div>
+
+                <div>
+                  <h3 className="mt-4 block text-gray-700 text-xl font-bold">🏴󠁧󠁢󠁷󠁬󠁳󠁿 My Personal Website...</h3>
+                  <input type="text"
+                  className="w-50% p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                  placeholder="Your answer here" />
+                </div>
+
+                <div>
+                  <h3 className="mt-4 block text-gray-700 text-xl font-bold"> 📣 Ask Me About...</h3>
+                  <input type="text"
+                  className=" w-66 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                  placeholder="Your answer here" />
+                </div>
+          </div>
+          </div>
+          </div>
         </div>
         <div className="right-container mt-[100px] bg-white h-auto min-h-[400px] w-[45%] p-[20px] rounded-lg break-words">
           <h1 className="text-3xl font-bold underline decoration-purple-400">
