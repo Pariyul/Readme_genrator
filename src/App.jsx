@@ -15,6 +15,12 @@ function App() {
   const [des, setDes] = useState("");
   const [clg, setClg] = useState("");
   const [skills, setSkills] = useState("")
+  const [task1, setTask1] = useState("")
+  const [task2, setTask2] = useState("")
+  const [task3, setTask3] = useState("")
+  const [task4, setTask4] = useState("")
+  const [task5, setTask5] = useState("")
+  const [task6, setTask6] = useState("")
 
   const Changename = (e) => {
     setName(e.target.value);
@@ -34,6 +40,25 @@ function App() {
   const ChangeSkill = (e) =>{
     setSkills(e.target.value);
   }
+  const ChangeTask1 = (e) =>{
+    setTask1(e.target.value);
+  }
+  const ChangeTask2 = (e) =>{
+    setTask2(e.target.value);
+  }
+  const ChangeTask3 = (e) =>{
+    setTask3(e.target.value);
+  }
+  const ChangeTask4 = (e) =>{
+    setTask4(e.target.value);
+  }
+  const ChangeTask5 = (e) =>{
+    setTask5(e.target.value);
+  }
+  const ChangeTask6 = (e) =>{
+    setTask6(e.target.value);
+  }
+
 
   return (
     <>
@@ -116,8 +141,10 @@ function App() {
                   </h3>
                   <input
                     type="text"
-                    className="w-500px p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                    className="w-full my-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
                     placeholder="Your answer here"
+                    value={task1}
+                    onChange={ChangeTask1}
                   />
                 </div>
 
@@ -127,8 +154,10 @@ function App() {
                   </h3>
                   <input
                     type="text"
-                    className="w-50% p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                    className="w-full my-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
                     placeholder="Your answer here"
+                    value={task2}
+                    onChange={ChangeTask2}
                   />
                 </div>
 
@@ -138,8 +167,10 @@ function App() {
                   </h3>
                   <input
                     type="text"
-                    className="p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                    className="w-full my-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
                     placeholder="Your answer here"
+                    value={task3}
+                    onChange={ChangeTask3}
                   />
                 </div>
               </div>
@@ -150,8 +181,10 @@ function App() {
                   </h3>
                   <input
                     type="text"
-                    className="w-50% p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                    className="w-full my-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
                     placeholder="Your answer here"
+                    value={task4}
+                    onChange={ChangeTask4}
                   />
                 </div>
 
@@ -161,8 +194,10 @@ function App() {
                   </h3>
                   <input
                     type="text"
-                    className="w-50% p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                    className="w-full my-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
                     placeholder="Your answer here"
+                    value={task5}
+                    onChange={ChangeTask5}
                   />
                 </div>
 
@@ -173,8 +208,10 @@ function App() {
                   </h3>
                   <input
                     type="text"
-                    className=" w-66 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                    className=" w-full my-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
                     placeholder="Your answer here"
+                    value={task6}
+                    onChange={ChangeTask6}
                   />
                 </div>
               </div>
@@ -305,7 +342,7 @@ function App() {
             banner == ""?(
               <a href="https://images.ctfassets.net/wfutmusr1t3h/2sX2KYqfnGuZTqWIDUUdEI/5e36aaaab860a3bd4e026fa52d597d87/og-image-24.jpg">
               <img 
-              className=" h-[200px] w-[550px] mt-5 ml-[35px]"
+              className=" h-[250px] w-[550px] mt-5 ml-[35px]"
               src="https://images.ctfassets.net/wfutmusr1t3h/2sX2KYqfnGuZTqWIDUUdEI/5e36aaaab860a3bd4e026fa52d597d87/og-image-24.jpg" 
               alt="default banner" />
               </a>
@@ -342,6 +379,64 @@ function App() {
               </p>
             ):(
               <p className="font-bold text-center mt-[25px] text-xl text-slate-700">Skills : {skills}</p>
+            )
+          }
+
+          {
+            task1 == ""?(
+              <p></p>
+            ):(
+          
+              <p >
+                <h2 className="font-bold text-2xl mt-[25px] text-start">What I am Doing</h2>
+                <h2 className="text-xl text-start text-slate-700 mt-[15px]">🚧 I'm currently working on <span className="font-bold text-black">{task1}</span> </h2></p>
+            )
+          }
+
+          {
+            task2 == ""?(
+              <p></p>
+            ):(
+          
+              <p >
+                <h2 className="text-xl text-start text-slate-700 mt-[15px]">📑I’m Currently Learning <span className="font-bold text-black">{task2}</span> </h2></p>
+            )
+          }
+
+          {
+            task3 == ""?(
+              <p></p>
+            ):(
+          
+              <p >
+                <h2 className="text-xl text-start text-slate-700 mt-[15px]">🏅My Favourite Hobby <span className="font-bold text-black">{task3}</span> </h2></p>
+            )
+          }
+            {
+            task4 == ""?(
+              <p></p>
+            ):(
+          
+              <p >
+                <h2 className="text-xl text-start text-slate-700 mt-[15px]">🗡️ Look At My this Project <span className="font-bold text-black">{task4}</span> </h2></p>
+            )
+          }
+            {
+            task5 == ""?(
+              <p></p>
+            ):(
+          
+              <p >
+                <h2 className="text-xl text-start text-slate-700 mt-[15px]">🏴󠁧󠁢󠁷󠁬󠁳󠁿 My Personal Website <span className="font-bold text-black">{task5}</span> </h2></p>
+            )
+          }
+            {
+            task6 == ""?(
+              <p></p>
+            ):(
+          
+              <p >
+                <h2 className="text-xl text-start text-slate-700 mt-[15px]">📣 Ask Me About <span className="font-bold text-black">{task6}</span> </h2></p>
             )
           }
 
